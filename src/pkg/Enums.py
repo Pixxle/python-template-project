@@ -13,17 +13,6 @@ class ExampleType(Enum):
     PRIVATE = auto()
 
 
-class Article(Enum):
-    PEN = Value(25)
-    BLOCK = Value(60)
-    PAPER = Value(500)
-    ERASER = Value(10)
-
-    @property
-    def val(self):
-        return self.value.value
-
-
 class ErrorTypes(Enum):
     VALIDATION_ERROR = auto()
     INTERNAL_SERVER_ERROR = auto()
