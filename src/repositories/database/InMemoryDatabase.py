@@ -1,5 +1,4 @@
 from models.Example import Example
-from models.Order import Order
 from repositories.database.Interface import DatabaseInterface
 from typing import List
 from repositories.database.exceptions import ExampleNotFoundException, DuplicateExampleException, OrderNotFoundException
@@ -12,13 +11,9 @@ class InMemoryDatabase(DatabaseInterface):
     """
     def __init__(self) -> None:
         self.example_storage: List[Example] = []
-        self.order_storage: List[Order] = []
 
     def _get_example_storage(self) -> List[Example]:
         return self.example_storage
-
-    def _get_order_storage(self) -> List[Order]:
-        return self.order_storage
 
     def get_example(self, id: str) -> Example:
         for cust in self.example_storage:

@@ -1,6 +1,5 @@
 import abc
 from models.Example import Example
-from models.Order import Order
 
 
 class DatabaseInterface (abc.ABC):
