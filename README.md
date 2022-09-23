@@ -1,7 +1,13 @@
 # template-project-python
+![Tests](https://github.com/pixxle/python-template-project/actions/workflows/tests.yml/badge.svg)
+![Linting](https://github.com/pixxle/python-template-project/actions/workflows/lint.yml/badge.svg)
 
-Some explanations of what each package does:
+👋 Hello peeps!
 
+I got tired of always creating this application layout time and time again 😅
+So decided to just create a template that's easily used for starting new python projects and throw it up here on Github.
+
+Quick explaination of folder structure:
 ```
 .
 ├── examples # http request examples for trying the application out
@@ -17,3 +23,5 @@ Some explanations of what each package does:
 │   └── src
 │       └── services # examples of how unit tests would be implemented
 ```
+
+This project is loosly based on [Uncle bobs clean architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) but doesn't use is-a relationships via inheritance, instead by using @abc.abstractclassmethod we simulate something very similar to interface implementation in other languages, such as Go or Java :) This is the cleanest way I've found to implement is-a relationship without getting into a inheritance hell. 👿
