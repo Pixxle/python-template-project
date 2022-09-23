@@ -5,7 +5,7 @@
 👋 Hello peeps!
 
 I got tired of always creating this application layout time and time again 😅
-So decided to just create a template that's easily used for starting new python projects and throw it up here on Github.
+So decided to just create a template that's easily used for starting new python projects.
 
 Quick explaination of folder structure:
 ```
