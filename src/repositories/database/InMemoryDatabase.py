@@ -1,13 +1,11 @@
 from models.Example import Example
 from repositories.database.Interface import DatabaseInterface
 from typing import List
-from repositories.database.exceptions import ExampleNotFoundException, DuplicateExampleException, OrderNotFoundException
+from repositories.database.exceptions import ExampleNotFoundException, DuplicateExampleException
 
 
 class InMemoryDatabase(DatabaseInterface):
-    """ Implementation only works as long as examples can't be updated,
-    currently each order holds a copy of the example object associated with them, in a more permanent solution
-    the the order would instead only hold a reference to the example_id.
+    """ Implementation only works as long as examples can't be updated
     """
     def __init__(self) -> None:
         self.example_storage: List[Example] = []
