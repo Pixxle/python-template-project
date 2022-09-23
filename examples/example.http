@@ -1,0 +1,22 @@
+### GET EXAMPLE
+GET http://127.0.0.1:5000/example/519a6b2f-c2c7-4e13-ac7d-dc8f494875ec
+
+
+### POST REQUEST VALIDATION_ERROR EXAMPLE
+POST http://127.0.0.1:5000/example
+content-type: application/json
+
+{
+    "name": "sample",
+    "example_type": "test"
+}
+
+
+### POST REQUEST EXAMPLE
+POST http://127.0.0.1:5000/example
+content-type: application/json
+
+{
+    "name": "asdasd",
+    "example_type": "SMALL_EXAMPLE"
+}
